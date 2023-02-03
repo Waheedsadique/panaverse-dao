@@ -7,6 +7,7 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Image,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
@@ -59,9 +60,20 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Box>
-          <Text>Made by Waheed Saddique</Text>
+          
+          <Text  >Made by Waheed Saddique </Text>
         </Box>
+        <Stack left={"50"} > 
+           <Image 
+               position={"relative"}
+               right="280"
+               w={"20%"}
+               h={"20%"}
+               src='/waheed1.png'
+             /></Stack>
+       
         <Stack direction={"row"} spacing={6}>
+       
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>
